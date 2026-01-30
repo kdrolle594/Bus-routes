@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Bahama Bus Routes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="info-panel">
+        <h2>🚌 Grand Bahama Bus Routes</h2>
+        <ul class="route-list" id="routeList"></ul>
+    </div>
+
+    <div class="schedule-panel" id="schedulePanel">
+        <span class="close-btn" onclick="closeSchedule()">×</span>
+        <h3 id="scheduleTitle">Route Schedule</h3>
+        <div id="scheduleContent"></div>
+    </div>
+
+    <div class="legend">
+        <strong>Legend</strong>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #666; border-radius: 50%; width: 8px; height: 8px;"></div>
+            <span>Bus Stops</span>
+        </div>
+        <div class="legend-item">
+            <span style="margin-right: 10px;">🚌</span>
+            <span>Active Buses</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+    
